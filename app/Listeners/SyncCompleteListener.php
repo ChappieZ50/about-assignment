@@ -21,7 +21,6 @@ class SyncCompleteListener
 
     public function handle(SyncCompleteEvent $event)
     {
-        $capsules = Capsule::get();
-        Log::info('Done SpaceX Data Syncing: ',$capsules);
+        Log::info('Done SpaceX Data Syncing: ', Capsule::get()->toArray());
     }
 }
