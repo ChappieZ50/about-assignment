@@ -2,15 +2,17 @@
 
 namespace App\Events;
 
-class ExampleEvent extends Event
+
+use App\Models\Capsule;
+
+class SyncCompleteEvent extends Event
 {
+
     /**
      * Create a new event instance.
      *
-     * @return void
      */
     public function __construct()
     {
-        //
     }
 }
